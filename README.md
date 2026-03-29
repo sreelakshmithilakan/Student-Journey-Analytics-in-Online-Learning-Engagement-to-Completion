@@ -1,150 +1,111 @@
-# 📚 Online Course Platform: Student Performance & Engagement Analysis  
-### 📊 Power BI Dashboard | 📘 Excel Data Preparation
+# 📊 Student Journey Analytics in Online Learning: Engagement to Completion
+
+## Executive Summary
+This project analyzes user behavior on an online learning platform to identify the gap between engagement and course completion.
+
+While users actively engage and make measurable progress, completion rates remain low (~48%). The analysis highlights a critical drop-off in mid-to-late stages of the learning journey, indicating inefficiencies in content delivery and user experience.
 
 ---
 
-## 🎯 Project Overview
-This project analyzes **student engagement, performance, and course completion behavior** on an online learning platform.
+## Business Context
+Online learning platforms rely on course completion as a key success metric, directly impacting user retention, satisfaction, and long-term revenue.
 
-Using **Excel for data preparation** and **Power BI for interactive visualization**, the analysis explores how factors such as **time spent, session attendance, demographics, and course category** influence student success and satisfaction.
+Despite strong enrollment and engagement, completion rates often underperform due to:
+- Late-stage disengagement  
+- Ineffective content progression  
+- Lack of personalized learning paths  
 
-The dashboard helps identify **engagement patterns, high-performing students, and course effectiveness** to support data-driven improvements in online learning platforms.
-
----
-
-## 🔍 Core Analysis Areas
-
-### 👩‍🎓 Student Engagement Analysis
-- Measure **time invested in learning** (`Time_Spent`) and its relationship with course progress  
-- Categorize students by **engagement level** (Low / Medium / High)  
-- Evaluate **session attendance patterns** to understand learning consistency  
+This project focuses on identifying these friction points and quantifying their impact.
 
 ---
 
-### ⭐ Performance Evaluation
-- Identify **high-performing students** based on completion status and feedback ratings  
-- Compare **progress % vs feedback rating** to analyze satisfaction vs effort  
-- Detect inconsistencies such as **completed courses with low ratings**
+## Analytical Approach
+
+### 1. Behavioral Analysis
+- Evaluated relationship between **engagement levels and completion**
+- Analyzed **progress stages vs completion outcomes**
+- Identified non-linear patterns in user behavior
+
+### 2. Funnel Analysis
+- Tracked user journey from enrollment → progress → completion  
+- Detected **drop-offs beyond 50–75% progress stage**
+
+### 3. Segmentation Analysis
+- Compared completion rates across:
+  - Experience levels  
+  - High vs normal performers  
+- Identified performance gaps across user groups
+
+### 4. Trend Analysis
+- Monthly enrollment patterns  
+- Yearly completion trends to detect performance shifts over time  
+
+### 5. Course-Level Performance
+- Identified consistently underperforming courses  
+- Highlighted potential content or difficulty issues  
 
 ---
 
-### 🌍 Demographic Insights
-- Analyze engagement trends across **age groups**  
-- Compare completion rates across **countries**  
-- Evaluate **gender distribution** and its relationship with learning outcomes  
+## Key Findings
+
+- **Engagement does not consistently translate into completion**, indicating inefficiencies in the learning experience  
+- Completion **peaks at moderate engagement (50–75%)** and declines at higher levels  
+- Users with higher progress still drop off before completion, highlighting **late-stage friction**  
+- More experienced users demonstrate higher completion rates  
+- A subset of courses consistently underperform, suggesting content-level issues  
+- Completion trends show a **decline after 2023**, indicating potential systemic changes  
 
 ---
 
-### 📚 Course & Category Performance
-- Identify **top-performing course categories**  
-- Detect courses with **high enrollment but lower completion rates**  
-- Compare **course-level and instructor-level feedback ratings**
+## Business Impact
+
+The findings suggest that improving completion rates requires focusing on **quality of engagement rather than quantity**.
+
+Key implications:
+- Increasing engagement alone is insufficient  
+- Late-stage user experience is a critical failure point  
+- Targeted interventions can significantly improve retention and completion  
 
 ---
 
-### 📈 Enrollment Trends
-- Track **month-wise enrollment patterns**  
-- Identify potential **seasonal or marketing-driven variations**
+## Recommendations
+
+- Optimize **mid-to-late stage course experience (50%+ progress)**  
+- Introduce **checkpoint-based engagement strategies** to sustain momentum  
+- Improve or redesign **underperforming courses**  
+- Implement **personalized learning paths based on user experience level**  
+- Monitor completion trends to identify **content or platform-level issues early**  
 
 ---
 
-### ⭐ Feedback Quality Analysis
-- Analyze **feedback rating distribution (1–5)**  
-- Identify **consistently high or low-rated courses**
+## Tools & Technologies
+- Power BI (dashboarding and visualization)  
+- DAX (calculated columns and measures)  
+- Data modeling and transformation  
 
 ---
 
-## ❓ Key Questions Answered
+## Dashboard Overview
+The dashboard provides:
+- KPI tracking (Completion, Progress, Engagement, Feedback)  
+- Behavioral patterns across progress and engagement levels  
+- Segmentation insights (experience level, performance groups)  
+- Course-level performance analysis
+<img width="1275" height="717" alt="image" src="https://github.com/user-attachments/assets/e416dec8-5ee3-4b72-91c1-87939f744021" />
 
-This analysis explores important product and learning analytics questions:
-
-- What characteristics define **high-performing students**?  
-- Which course categories drive **higher engagement and completion**?  
-- Is there a strong relationship between **time spent and learning outcomes**?  
-- How does engagement vary across **age, country, and gender**?  
-- Which courses may require **improvements in content or delivery**?
-
----
-
-## 🧹 Data Preparation Process
-
-### 📘 Excel – Data Cleaning & Transformation
-
-Data preparation included:
-
-- Standardizing **Name, Email, Age, and Time_Spent fields**
-- Cleaning categorical variables such as **Country, Gender, and Completion status**
-- Extracting **attendance counts** from comma-separated date values
-
-#### Derived Columns Created
-- `Experience_Level`
-- `Engagement_Level`
-- `High_Performer`
-
-These transformations structured the dataset for **analysis in Power BI**.
 
 ---
 
-## 📊 Power BI Dashboard Development
-
-The interactive dashboard provides a **visual overview of student engagement and course performance**.
-
-### Key Components
-
-**📊 KPI Cards**
-- Total Students  
-- Average Feedback Rating  
-- Course Completion Rate  
-- Average Progress Percentage  
-
-**📈 Analytical Visuals**
-- Course category performance analysis  
-- Country-wise completion comparison  
-- Engagement heatmap (attendance vs time spent)  
-- Feedback rating distribution  
-
-**🎛 Interactive Features**
-- Dynamic slicers for course category and country  
-- Drill-through views for deeper analysis  
+## Key Takeaway
+User effort (time and progress) is not effectively converting into completion. Addressing late-stage friction and improving learning experience design is essential to drive better outcomes.
 
 ---
 
-## ⚙️ Technical Highlights
-
-- Data cleaning and transformation using **Excel**  
-- Interactive **Power BI dashboard development**  
-- **DAX measures** for engagement and completion metrics  
-- Comparative analysis across **demographics, courses, and engagement levels**
+## Notes
+- Dataset is simulated for analytical demonstration  
+- Focus is on analytical thinking, insight generation, and dashboard design  
 
 ---
 
-## 💡 Key Insights
-
-- Students who spend **more time on the platform tend to show higher course progress and completion rates**  
-- Certain course categories demonstrate **stronger engagement and higher feedback ratings**  
-- Enrollment and completion rates vary across **countries and demographics**  
-- Engagement patterns suggest that **consistent session attendance improves learning outcomes**
-
-These insights help identify **areas for improving course design, engagement strategies, and learning effectiveness**.
-
----
-
-## 📁 Repository Contents
-
-- 📘 **Excel File** – Cleaned dataset and transformation steps  
-- 📊 **PBIX File** – Interactive Power BI dashboard  
-- 🖼 **Dashboard Screenshots** – Preview of visual insights  
-
----
-
-## 🛠️ Tools Used
-
-- **Excel** – Data preparation and transformation  
-- **Power BI** – Dashboard development and visualization  
-- **DAX** – Custom metrics and calculated measures  
-
----
-
-## 🌐 Domain
-
-**E-Learning Analytics · EdTech · Student Engagement Analysis**
+## Contact
+[Sreelakshmi V T/ LinkedIn](https://www.linkedin.com/in/sreelakshmithilakan/))
