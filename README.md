@@ -108,4 +108,4 @@ User effort (time and progress) is not effectively converting into completion. A
 ---
 
 ## Contact
-[Sreelakshmi V T/ LinkedIn](https://www.linkedin.com/in/sreelakshmithilakan/))
+[Sreelakshmi V T/ LinkedIn](https://www.linkedin.com/in/sreelakshmithilakan/)
